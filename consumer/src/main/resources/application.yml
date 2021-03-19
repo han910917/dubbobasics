@@ -1,0 +1,15 @@
+dubbo:
+  application:
+    name: myConsumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    timeout: 10000
+
+  protocol:
+    id: dubbos
+    name: dubbos
+    port: 20890
+  scan:
+    base-packages: com.dubbo.consumer
+server:
+  port: 8081
